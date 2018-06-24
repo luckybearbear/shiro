@@ -24,7 +24,7 @@
     <context:component-scan base-package="com.zj" />
     <bean
             class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="prefix" value="/WEB-INF/" />
         <property name="suffix" value=".jsp" />
     </bean>
     <mvc:resources mapping="/static/**" location="/static/" cache-period="2592000"/>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
        xmlns:p="http://www.springframework.org/schema/p" xmlns:aop="http://www.springframework.org/schema/aop"
@@ -58,9 +57,9 @@
             </list>
         </property>
     </bean>
-    <!-- c、mapper扫描器：通过扫描的模式，扫描目录在com/loan/mapper目录下 -->
+    <!-- c、mapper扫描器：通过扫描的模式，扫描目录在com/zj/mapper目录下 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.loan.dao.mapper" />
+        <property name="basePackage" value="com.zj.dao.mapper" />
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
     </bean>
     <!-- 第二步：通过Spring管理Service接口。使用配置方式将Service接口配置在Spring配置文件中。实现事务控制。 -->
